@@ -1,0 +1,158 @@
+
+/* ================================================
+   CULTURE SECTION
+   ================================================ */
+.culture {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.culture-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.culture-text h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.culture-text p {
+  font-size: 1.1rem;
+  color: var(--grayish-blue);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.culture-image {
+  background: linear-gradient(135deg, var(--lime-green), var(--bright-cyan));
+  border-radius: 12px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.culture-image::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="white" opacity="0.3"/><circle cx="80" cy="40" r="1.5" fill="white" opacity="0.2"/><circle cx="40" cy="60" r="1" fill="white" opacity="0.4"/><circle cx="70" cy="80" r="2.5" fill="white" opacity="0.2"/></svg>') repeat;
+  animation: float 20s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(-50px, -50px) rotate(360deg); }
+}
+
+/* ================================================
+   JOBS SECTION
+   ================================================ */
+.jobs {
+  background: var(--light-grayish-blue);
+  padding: 100px 0;
+}
+
+.jobs-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.jobs-header h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.jobs-header p {
+  font-size: 1.1rem;
+  color: var(--grayish-blue);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.job-filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  background: var(--white);
+  border: 2px solid transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: var(--grayish-blue);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--lime-green);
+  color: var(--lime-green);
+}
+
+.job-list {
+  display: grid;
+  gap: 24px;
+}
+
+/* ================================================
+   JOB CARD STYLING
+   ================================================ */
+.job-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: center;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.job-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.job-meta span {
+  color: var(--grayish-blue);
+  font-size: 14px;
+  padding: 4px 12px;
+  background: var(--very-light-gray);
+  border-radius: 20px;
+}
+
+.job-description {
+  color: var(--grayish-blue);
+  line-height: 1.6;
+}
+

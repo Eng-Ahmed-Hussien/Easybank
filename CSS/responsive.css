@@ -1,0 +1,353 @@
+/*
+  Responsive Stylesheet
+  Organized by breakpoint and annotated for clarity
+*/
+
+/* --------------------------------------------- */
+/* Small devices (mobile phones, <480px)        */
+/* --------------------------------------------- */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .why-us-header h2,
+  .articles-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
+  .newsletter p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+}
+
+/* --------------------------------------------- */
+/* Medium devices (tablets, <768px)             */
+/* --------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  header {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+  }
+  header+* {
+    margin-top: 60px;
+  }
+  .blog-hero {
+    padding:60px 0 40px;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 20px;
+    right: 20px;
+    background: var(--white);
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    gap: 24px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li a::after {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    justify-content: end;
+    flex: 1;
+    width: fit-content;
+  }
+  .mobile-menu-btn img {
+    align-self: flex-end;
+  }
+
+  nav .main-btn {
+    display: none;
+  }
+
+  .why-us {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .why-us-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .why-us-header h2 {
+    font-size: 2rem;
+  }
+
+  .features {
+    gap: 32px;
+  }
+  .feature {
+    text-align: center;
+  }
+
+  .mission-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .mission-text h2 {
+    font-size: 2rem;
+  }
+  .mission-image {
+    min-height: 300px;
+  }
+
+  .slide-content h3 {
+    font-size: 1.5rem;
+  }
+  .slide-content p {
+    font-size: 1rem;
+  }
+
+  .articles {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .articles-header h2 {
+    font-size: 2rem;
+  }
+  .article-list {
+    gap: 24px;
+  }
+
+  .contact-hero {
+    padding: 60px 0 40px;
+  }
+  .contact-hero h1 {
+    font-size: 2.2rem;
+  }
+  .contact-content {
+    padding: 60px 0;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .contact-form {
+    padding: 24px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-section {
+    padding: 60px 0;
+  }
+  .faq-header h2 {
+    font-size: 2rem;
+  }
+  .blog-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-box {
+    max-width: none;
+  }
+  .featured-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .featured-text h2 {
+    font-size: 2rem;
+  }
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .stat-item {
+    padding: 30px 15px;
+  }
+  .stat-item h3 {
+    font-size: 2.5rem;
+  }
+  .stat-item p {
+    font-size: 1rem;
+  }
+
+  .about-hero {
+    padding: 60px 0 40px;
+  }
+  .about-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .values-header h2,
+  .team-header h2,
+  .cta h2 {
+    font-size: 2rem;
+  }
+  .values,
+  .team {
+    padding: 60px 0;
+  }
+  .values-header,
+  .team-header {
+    margin-bottom: 40px;
+  }
+  .values-grid,
+  .team-grid {
+    gap: 24px;
+  }
+  .cta {
+    padding: 40px 0;
+  }
+
+  .success-message {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    transform: translateY(-100px);
+  }
+  .success-message.show {
+    transform: translateY(0);
+  }
+
+  .careers-hero h1 {
+    font-size: 2.5rem;
+  }
+  .careers-hero p {
+    font-size: 1rem;
+  }
+  .culture-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  .culture-text h2,
+  .jobs-header h2,
+  .benefits-header h2 {
+    font-size: 2rem;
+  }
+  .job-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  .job-meta {
+    justify-content: center;
+  }
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 40px 0 0;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .footer-right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-btn {
+    width: 100%;
+    padding: 18px 32px;
+  }
+}
+
+/* --------------------------------------------- */
+/* Mid-range screens (max-width: 63.9375em ~1023px) */
+/* --------------------------------------------- */
+@media (max-width: 63.9375em) {
+  .hero .container {
+    padding: 0;
+  }
+  .hero .hero-text {
+    padding: 3.125rem 1.5rem;
+  }
+}
+
+/* --------------------------------------------- */
+/* Medium screens and up (min-width: 40em / 640px) */
+/* --------------------------------------------- */
+@media (min-width: 40em) {
+  .hero .hero-image {
+    min-height: 25rem;
+    background-position-y: 70%;
+  }
+  .hero .hero-image::after {
+    background-size: 53%;
+  }
+}
+
+/* --------------------------------------------- */
+/* Desktop and larger (min-width: 64em / 1024px)  */
+/* --------------------------------------------- */
+@media (min-width: 64em) {
+  .hero .container {
+    display: flex;
+    align-items: center;
+  }
+  .hero .hero-image {
+    flex: 3;
+    order: 2;
+    min-height: 41rem;
+    background-image: none;
+  }
+  .hero .hero-image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 150%;
+    background: url(../images/bg-intro-desktop.svg) no-repeat -5% 83%/122%;
+  }
+  .hero .hero-image::after {
+    width: 119%;
+    height: 122%;
+    background-size: 94%;
+    background-position: center 150%;
+    left: 19%;
+  }
+  .hero .hero-text {
+    flex: 2;
+    order: 1;
+    text-align: start;
+  }
+  .hero .hero-text h1 {
+    font-size: 3.25rem;
+  }
+}
